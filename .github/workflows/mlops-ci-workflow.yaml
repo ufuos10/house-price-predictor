@@ -74,9 +74,9 @@ jobs:
         uses: docker/setup-buildx-action@v4
       
       -  name: Build and push
-        uses: docker/build-push-action@v7
-        with:
-          push: true
-          tags: ufuos10/fastapi:{{ github.sha }}
-          context: "."
-          file: "Dockerfile"
+         uses: docker/build-push-action@v7
+         with:
+           push: true
+           tags: ufuos10/fastapi:{{ github.sha }}
+           context: "."
+           file: "Dockerfile"
