@@ -77,6 +77,6 @@ jobs:
          uses: docker/build-push-action@v7
          with:
            push: true
-           tags: ufuos10/fastapi:{{ github.sha }}
+           tags: ufuos10/fastapi:${{ github.sha }}
            context: "."
            file: "Dockerfile"
