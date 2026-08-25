@@ -1,0 +1,32 @@
+NAME                                                         READY   STATUS    RESTARTS        AGE               
+pod/alertmanager-prom-kube-prometheus-stack-alertmanager-0   2/2     Running   2 (9m1s ago)    31m               
+pod/prom-grafana-7f697648b7-wz5db                            3/3     Running   4 (6m5s ago)    32m               
+pod/prom-kube-prometheus-stack-operator-fc6969c54-ln26l      1/1     Running   8 (6m31s ago)   32m               
+pod/prom-kube-state-metrics-bfcc56b4b-w6ll5                  1/1     Running   4 (8m9s ago)    32m               
+pod/prom-prometheus-node-exporter-n8rc7                      1/1     Running   1 (9m1s ago)    32m               
+pod/prom-prometheus-node-exporter-plmhl                      1/1     Running   3 (9m1s ago)    32m               
+pod/prom-prometheus-node-exporter-rkc9t                      1/1     Running   1 (9m1s ago)    32m               
+pod/prometheus-prom-kube-prometheus-stack-prometheus-0       2/2     Running   2 (9m1s ago)    31m               
+                                                                                                                 
+NAME                                              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)              
+           AGE                                                                                                   
+service/alertmanager-operated                     ClusterIP   None            <none>        9093/TCP,9094/TCP,909
+4/UDP      31m                                                                                                   
+service/prom-grafana                              NodePort    10.96.137.220   <none>        80:30200/TCP         
+           32m                                                                                                   
+service/prom-kube-prometheus-stack-alertmanager   ClusterIP   10.96.39.41     <none>        9093/TCP,8080/TCP    
+           32m                                                                                                   
+service/prom-kube-prometheus-stack-operator       ClusterIP   10.96.127.235   <none>        443/TCP              
+           32m                                                                                                   
+service/prom-kube-prometheus-stack-prometheus     NodePort    10.96.33.119    <none>        9090:30300/TCP,8080:3
+1865/TCP   32m                                                                                                   
+service/prom-kube-state-metrics                   ClusterIP   10.96.218.174   <none>        8080/TCP             
+           32m                                                                                                   
+service/prom-prometheus-node-exporter             ClusterIP   10.96.96.129    <none>        9100/TCP             
+           32m                                                                                                   
+service/prometheus-operated                       ClusterIP   None            <none>        9090/TCP             
+           31m                                                                                                   
+                                                                                                                 
+NAME                                           DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR
+            AGE                                                                                                  
+daemonset.apps/prom-prometheus-node-exporter   3         3         3       3            3           kubernetes.io

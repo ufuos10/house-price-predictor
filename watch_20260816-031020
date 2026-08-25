@@ -1,0 +1,21 @@
+NAME                                READY   STATUS    RESTARTS     AGE                                          
+pod/kube-ops-view-5687d9ddd-ttnfw   1/1     Running   1 (8h ago)   32h                                          
+pod/model-f97cc8759-pvhgj           1/1     Running   0            67m                                          
+pod/model-f97cc8759-w2tms           1/1     Running   0            67m                                          
+pod/streamlit-75ddbff6cd-45wdl      1/1     Running   0            9m55s                                        
+pod/streamlit-75ddbff6cd-jnfkb      1/1     Running   0            9m55s                                        
+pod/streamlit-75ddbff6cd-kz24w      1/1     Running   0            7m35s                                        
+pod/streamlit-75ddbff6cd-m5njv      1/1     Running   0            7m46s                                        
+pod/streamlit-75ddbff6cd-n2rbr      1/1     Running   0            9m55s                                        
+pod/streamlit-75ddbff6cd-nlq92      1/1     Running   0            9m55s                                        
+pod/streamlit-75ddbff6cd-pvst2      1/1     Running   0            7m45s                                        
+pod/streamlit-75ddbff6cd-tqjhg      1/1     Running   0            7m39s                                        
+                                                                                                                
+NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE                           
+service/kube-ops-view   NodePort    10.96.97.167   <none>        80:32000/TCP     33h                           
+service/kubernetes      ClusterIP   10.96.0.1      <none>        443/TCP          33h                           
+service/model           NodePort    10.96.6.246    <none>        8000:30100/TCP   63m                           
+service/streamlit       NodePort    10.96.205.48   <none>        8501:30000/TCP   7h35m                         
+                                                                                                                
+NAME                            READY   UP-TO-DATE   AVAILABLE   AGE                                            
+deployment.apps/kube-ops-view   1/1     1            1           33h                                            
