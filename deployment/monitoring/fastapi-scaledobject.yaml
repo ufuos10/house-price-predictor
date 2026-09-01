@@ -23,4 +23,4 @@ spec:
         serverAddress: http://prom-kube-prometheus-stack-prometheus.monitoring.svc:9090
         metricName: request_rate
         query: sum(rate(http_requests_total[1m]))
-threshold: "20"
+        threshold: "20"
