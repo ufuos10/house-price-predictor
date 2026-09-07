@@ -16,7 +16,7 @@ spec:
         app: streamlit
     spec:
       containers:
-      - image: ufuos10/streamlit:v4
+      - image: ufuos10/streamlit:latest
         name: streamlit
         ports:
         - containerPort: 8501
